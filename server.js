@@ -125,7 +125,7 @@ app.put('/recipes/:id', jsonParser, (req, res) => {
   Recipes.update({
     id: req.params.id,
     name: req.body.name,
-    budget: req.body.ingredients
+    ingredients: req.body.ingredients
   });
   res.status(204).end();
 });
